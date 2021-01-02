@@ -1,0 +1,256 @@
+.channel {
+  margin-bottom: 50px;
+}
+
+.channel__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+
+.channel__title-in {
+  display: flex;
+  align-items: center;
+}
+
+.channel__title-name {
+  display: flex;
+  align-items: center;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 33px;
+  color: #19202C;
+  text-decoration: none;
+}
+
+.channel__title-img {
+  margin-right: 20px;
+}
+
+.channel__title-inner {
+  display: flex;
+  align-items: center;
+  padding-right: 149px;
+}
+
+.channel__title-btn {
+  background: #000000;
+  opacity: 0.24;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  border: none;
+  cursor: pointer;
+  align-self: center;
+  vertical-align: middle;
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.channel__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.channel__item {
+  max-width: 250px;
+  margin-right: 40px;
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.channel__link {
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+}
+
+.channel__link-duration {
+  width: 47px;
+  height: 24px;
+  background: #000000;
+  opacity: 0.3;
+  border-radius: 12px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  padding: 3px 9px 3px 9px;
+  position: absolute;
+  top: 119px;
+  left: 195px;
+}
+
+.channel__btn {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  display: none;
+}
+
+.channel__item:hover .channel__btn {
+  display: block;
+}
+
+.channel__link-img {
+  margin-right: 0;
+}
+
+.channel__link-heading {
+  margin: 0;
+  padding-top: 10px;
+  margin-bottom: 4px;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #19202C;
+}
+
+.channel__link-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.channel__link-date {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #C2C2C2;
+}
+
+.channel__title-subs {
+  background: #FF0000;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-right: 40px;
+}
+
+// @include responsive (1066) {
+//   .channel__title-inner {
+//     display: none;
+//   }
+
+//   .channel__list {
+//     flex-wrap: wrap;
+//     justify-content: center;
+//   }
+
+//   .channel__item {
+//     margin-right: 30px;
+//     margin-bottom: 30px;
+
+//     &:nth-child(3n) {
+//       margin-right: 0;
+//     }
+//   }
+// }
+
+// @include responsive (899) {
+//   .channel__list {
+//     flex-wrap: wrap;
+//     justify-content: center;
+//   }
+//   .channel__item {
+
+//     &:nth-child(2n) {
+//       margin-right: 30px;
+//     }
+
+//     &:nth-child(3n) {
+//       margin-right: 30px;
+//     }
+//   }
+// }
+
+// @include responsive (747) {
+//   .channel__item {
+
+//     &:nth-child(2n) {
+//       margin-right: 0;
+//     }
+//   }
+// }
+
+// @include responsive (619) {
+//   .channel__list {
+//     flex-direction: column;
+//     justify-content: center;
+//   }
+
+//   .channel__item {
+//     margin-right: 0;
+
+//     &:nth-child(2n) {
+//       margin-right: 0;
+//     }
+
+//     &:nth-child(3n) {
+//       margin-right: 0;
+//     }
+//   }
+// }
+
+// @include responsive (360) {
+//   .channel__link-date {
+//     font-size: 12px;
+//   }
+// }
+
+@include responsive (1066) {
+    .channel__title-inner {
+      display: none;
+    }
+  }
+
+@include responsive (600) {
+  .channel__list {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .channel__title {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .channel__item {
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+}
+
+@include responsive (450) {
+    .channel__link-date {
+      font-size: 12px;
+    }
+  }

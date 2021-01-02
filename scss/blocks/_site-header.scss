@@ -1,0 +1,148 @@
+.site-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.site-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header__left {
+  display: flex;
+  align-items: center;
+}
+
+.site-header__menu {
+  margin-right: 28px;
+  flex-shrink: 0;
+}
+
+.site-header__logo {
+  display: inline-block;
+  margin-right: 60px;
+  vertical-align: baseline;
+  flex-shrink: 0;
+}
+
+.site-header__form {
+  width: 400px;
+  margin-right: 10px;
+}
+
+.site-header__form-input {
+  width: 100%;
+  padding: 12px 17px 12px 23px;
+  background: #EBEBEB;
+  opacity: 0.3;
+  border-radius: 22px;
+  border: none;
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  background-size: 19px;
+  background-position: right 10px center;
+
+  &:focus {
+    background-image: none;
+    color: #222222;
+    opacity: 1;
+    background: #ffffff;
+  }
+
+  &:checked {
+    background-image: none;
+  }
+}
+
+.site-header__right {
+  display: flex;
+  align-items: center;
+}
+
+.site-header__video {
+  margin-right: 50px;
+  flex-shrink: 0;
+}
+
+.site-header__shape {
+  margin-right: 50px;
+  flex-shrink: 0;
+}
+
+.site-header__bell {
+  margin-right: 50px;
+  flex-shrink: 0;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    content: "3";
+    width: 18px;
+    height: 18px;
+    background: #FF0000;
+    border: 1px solid #FFFFFF;
+    padding: 4px 7px 4px 7px;
+    border-radius: 18px;
+    position: absolute;
+    top: 2px;
+    right: 0;
+  }
+}
+
+.site-header__user {
+  flex-shrink: 0;
+}
+
+.site-header__modal {
+  margin-right: 24px;
+  display: none;
+}
+
+
+@include responsive (1065) {
+  .site-header__right-in {
+    display: none;
+  }
+}
+
+
+
+@include responsive (744) {
+  .site-header__form-input {
+    width: 80%;
+  }
+}
+
+@include responsive (590) {
+  // .site-header__menu {
+  //   display: none;
+  // }
+
+  .site-header__form {
+    display: none;
+  }
+
+  .site-header__modal {
+    display: block;
+  }
+}
+
+@include responsive (600) {
+  .site-header__menu {
+    display: none;
+  }
+}

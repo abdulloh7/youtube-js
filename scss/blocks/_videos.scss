@@ -1,0 +1,40 @@
+.videos {
+  margin-top: 50px;
+  max-width: 1700px;
+  padding-left: 66px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.videos--active {
+  padding-left: 80px;
+}
+
+@include responsive (1066) {
+  .videos {
+    max-width: 1700px;
+  }
+}
+
+@include responsive (600) {
+  .videos {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 20px;
+  }
+}
+
+// @include responsive (971) {
+//   padding-left: 16px;
+//   padding-right: 16px;
+// }
+
+// @include responsive (619) {
+//   .videos {
+//     margin-top: 20px;
+//   }
+// }
+
+// @include responsive (400) {
+
+// }

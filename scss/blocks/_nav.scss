@@ -1,0 +1,278 @@
+.nav {
+  padding-top: 50px;
+  padding-left: 30px;
+}
+
+.nav__container {
+  max-width: 190px;
+  width: 100%;
+  height: 100%;
+}
+
+.nav__top {
+  margin-bottom: 58px;
+}
+
+.nav__updown--active {
+  display: none;
+}
+
+.nav__bottom {
+  margin-bottom: 40px;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav__item {
+  margin-bottom: 28px;
+
+  &:nth-child(3) {
+    margin-bottom: 60px;
+  }
+}
+
+.nav__link {
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #898989;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+
+  &--active {
+    color: #FF0000;
+
+     .nav__link-img path {
+      opacity: 1;
+      fill: #FF0000;
+    }
+  }
+}
+
+.nav__link-img {
+  display: block;
+  margin-right: 15px;
+}
+
+.nav__top-btn {
+  display: flex;
+  align-items: center;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #898989;
+}
+
+.nav__bottom-settings {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  vertical-align: baseline;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #898989;
+  margin-top: 104px;
+}
+
+.nav__bootom-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav__bottom-item {
+  margin-bottom: 23px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.nav__bottom-link {
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #898989;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.nav__lists {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-grow: 1;
+  position: fixed;
+  z-index: 40;
+  top: 115px;
+  left: 10px;
+  margin-right: 25px;
+  display: none;
+}
+
+.nav__lists--active {
+  display: block;
+}
+
+.nav__items {
+  margin-bottom: 0;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:nth-child(3) {
+    margin-bottom: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.nav__links {
+  flex-direction: column;
+  justify-content: center;
+
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.nav__links-img {
+  margin-bottom: 8px;
+  margin-right: 0;
+}
+
+@include responsive (1300) {
+  .nav__lists {
+    display: block;
+  }
+
+  .nav__wrapper {
+    display: none;
+  }
+
+  // .nav__wrapper {
+  //   display: flex;
+  //   flex-direction: column;
+  //   position: absolute;
+  //   z-index: 52;
+  //   top: 10%;
+  //   left: 0;
+  //   width: 15%;
+  //   height: 100%;
+  //   background-color: orange;
+  //   padding-left: 30px;
+  //   padding-top: 50px;
+
+  //   &::before {
+  //     content: "";
+  //     width: 100%;
+  //     height: 100%;
+  //     background-color: orangered;
+  //     opacity: 0.8;
+  //     position: relative;
+  //     z-index: 60;
+  //     flex-grow: 1;
+  //   }
+  // }
+
+  // .site-header__menu--open .nav__wrapper{
+  //   display: block;
+  // }
+
+  // .nav__list {
+  //   width: 100%;
+  // }
+
+  // .nav__bootom-list {
+  //   width: 100%;
+  // }
+
+  // .site-header__menu {
+  //   position: relative;
+  //   z-index: 55;
+  // }
+}
+
+// @include responsive (590) {
+  // .nav {
+  //   padding-left: 0;
+  //   margin-right: 900px;
+  // }
+
+  // body {
+  //   margin-bottom: 89px;
+  // }
+
+  // .nav__lists {
+  //   max-width: 1700px;
+  //   width: 100%;
+  //   display: flex;
+  //   justify-content: center;
+  //   top: 85%;
+  //   left: 0;
+  //   background-color: #fff;
+  // }
+
+  // .nav__items {
+  //   width: 100%;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   margin-bottom: 0;
+  //   padding: 24px 12px;
+
+  //   &:nth-child(3) {
+  //     margin-bottom: 0;
+  //   }
+  // }
+// }
+
+@include responsive (600) {
+  .nav {
+    padding-left: 0;
+  }
+
+  .nav__lists {
+      max-width: 1700px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      top: 89%;
+      left: 0;
+      background-color: #fff;
+    }
+
+    .nav__items {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0;
+      padding: 12px 12px;
+
+      &:nth-child(3) {
+        margin-bottom: 0;
+      }
+    }
+}

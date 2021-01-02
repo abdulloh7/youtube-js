@@ -1,0 +1,52 @@
+.meal {
+  margin-bottom: 50px;
+}
+
+.meal__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.meal__title-in {
+  display: flex;
+  align-items: center;
+}
+
+.meal__title-link {
+  text-decoration: none;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 33px;
+  color: #19202C;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.meal__title-text {
+  margin: 0;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #C2C2C2;
+}
+
+@include responsive (560) {
+  .meal__title-in {
+    flex-direction: column;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .meal__title-link {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+}
